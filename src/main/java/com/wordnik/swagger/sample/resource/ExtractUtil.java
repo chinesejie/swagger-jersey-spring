@@ -14,7 +14,7 @@ import com.wordnik.swagger.annotations.ApiOperation;
 import cn.edu.dhu.score.analyze.service.EtlService;
 
 @Path("/gogo.json")
-@Api(value="/gogo", description = "Operations about gogo")
+@Api(value="/gogo", description = "打造gogo")
 
 @Produces(MediaType.APPLICATION_JSON)
 public class ExtractUtil {
@@ -30,10 +30,10 @@ public class ExtractUtil {
 	}
 	@GET
 	@Path("/get")
-	@ApiOperation(value = "Get user by user name", responseClass = "string")
+	@ApiOperation(value = "打造gogo", responseClass = "string")
 	@ApiErrors(value = {
-			@ApiError(code = 400, reason = "Invalid username supplied"),
-			@ApiError(code = 404, reason = "User not found") })
+			@ApiError(code = 400, reason = "提供的资料不正确"),
+			@ApiError(code = 404, reason = "用户不存在") })
 
 	public Response getTest() {
 		return Response.ok()

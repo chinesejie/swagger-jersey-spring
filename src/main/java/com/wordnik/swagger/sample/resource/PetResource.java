@@ -20,7 +20,6 @@ import com.wordnik.swagger.annotations.*;
 import com.wordnik.swagger.sample.data.PetData;
 import com.wordnik.swagger.sample.model.Pet;
 import com.wordnik.swagger.sample.exception.NotFoundException;
-import com.wordnik.swagger.jaxrs.JavaHelp;
 
 import javax.ws.rs.core.Response;
 import javax.ws.rs.*;
