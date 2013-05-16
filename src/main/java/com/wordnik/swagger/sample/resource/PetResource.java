@@ -67,7 +67,7 @@ public class PetResource {
 
 	@GET
 	@Path("/findByStatus")
-	@ApiOperation(value = "Finds Pets by status", notes = "Multiple status values can be provided with comma seperated strings", responseClass = "com.wordnik.swagger.sample.model.Pet", multiValueResponse = true)
+	@ApiOperation(value = "根据状态找您的宠物", notes = "Multiple status values can be provided with comma seperated strings", responseClass = "com.wordnik.swagger.sample.model.Pet", multiValueResponse = true)
 	@ApiErrors(value = { @ApiError(code = 400, reason = "Invalid status value") })
 	public Response findPetsByStatus(
 			@ApiParam(value = "Status values that need to be considered for filter", required = true, defaultValue = "available", allowableValues = "available,pending,sold", allowMultiple = true) @QueryParam("status") String status) {
